@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C47A18FA2A018AD500DB935D /* ZipKit in Frameworks */ = {isa = PBXBuildFile; productRef = C47A18F92A018AD500DB935D /* ZipKit */; };
 		CB222F501766261B0032EEB0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CB222F4F1766261B0032EEB0 /* Settings.bundle */; };
 		CB3B5C891748858200A061B1 /* Read Me.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB3B5C871748858200A061B1 /* Read Me.txt */; };
 		CB3B5C8A1748858200A061B1 /* ZipKit.png in Resources */ = {isa = PBXBuildFile; fileRef = CB3B5C881748858200A061B1 /* ZipKit.png */; };
-		CB4AC85F243FAB5100D2BC41 /* libtouchzipkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4AC85E243FAB5100D2BC41 /* libtouchzipkit.a */; };
 		CB7951471748572400849531 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7951461748572400849531 /* UIKit.framework */; };
 		CB7951491748572400849531 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7951481748572400849531 /* Foundation.framework */; };
 		CB79514B1748572400849531 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB79514A1748572400849531 /* CoreGraphics.framework */; };
@@ -29,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C47A18F82A018A9A00DB935D /* ZipKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ZipKit; path = ../..; sourceTree = "<group>"; };
 		CB222F4F1766261B0032EEB0 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		CB3B5C871748858200A061B1 /* Read Me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Read Me.txt"; sourceTree = "<group>"; };
 		CB3B5C881748858200A061B1 /* ZipKit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZipKit.png; sourceTree = "<group>"; };
@@ -60,11 +61,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4AC85F243FAB5100D2BC41 /* libtouchzipkit.a in Frameworks */,
 				CB795170174857B700849531 /* libz.dylib in Frameworks */,
 				CB7951471748572400849531 /* UIKit.framework in Frameworks */,
 				CB7951491748572400849531 /* Foundation.framework in Frameworks */,
 				CB79514B1748572400849531 /* CoreGraphics.framework in Frameworks */,
+				C47A18FA2A018AD500DB935D /* ZipKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +83,7 @@
 		CB79513A1748572400849531 = {
 			isa = PBXGroup;
 			children = (
+				C47A18F82A018A9A00DB935D /* ZipKit */,
 				CB79514C1748572400849531 /* ZipKit Touch */,
 				CB7951451748572400849531 /* Frameworks */,
 				CB7951441748572400849531 /* Products */,
@@ -157,6 +159,9 @@
 			dependencies = (
 			);
 			name = "ZipKit Touch";
+			packageProductDependencies = (
+				C47A18F92A018AD500DB935D /* ZipKit */,
+			);
 			productName = "ZipKit Touch";
 			productReference = CB7951431748572400849531 /* ZipKit Touch.app */;
 			productType = "com.apple.product-type.application";
@@ -352,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 77B577G997;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				HEADER_SEARCH_PATHS = ../..;
 				INFOPLIST_FILE = "ZipKit Touch/ZipKit Touch-Info.plist";
@@ -368,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 77B577G997;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				HEADER_SEARCH_PATHS = ../..;
 				INFOPLIST_FILE = "ZipKit Touch/ZipKit Touch-Info.plist";
@@ -402,6 +409,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C47A18F92A018AD500DB935D /* ZipKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ZipKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB79513B1748572400849531 /* Project object */;
 }

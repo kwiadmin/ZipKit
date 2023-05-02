@@ -5,7 +5,7 @@
 //  Created by Karl Moskowski on 01/04/09.
 //
 
-#import <ZipKit/GMAppleDouble.h>
+#import "GMAppleDouble.h"
 
 @interface GMAppleDouble (ZKAdditions)
 

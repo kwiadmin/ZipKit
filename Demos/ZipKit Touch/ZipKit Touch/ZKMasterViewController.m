@@ -6,10 +6,11 @@
 //  Copyright (c) 2013 Karl Moskowski. All rights reserved.
 //
 
+@import ZipKit;
 #import "ZKMasterViewController.h"
 #import "ZKDetailViewController.h"
-#import "ZipKit/ZKDefs.h"
-#import "ZipKit/ZKDataArchive.h"
+//#import "ZipKit/ZKDefs.h"
+//#import "ZipKit/ZKDataArchive.h"
 
 @implementation ZKMasterViewController
 

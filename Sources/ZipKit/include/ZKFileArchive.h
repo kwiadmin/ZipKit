@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ZipKit/ZKArchive.h>
+#import "ZKArchive.h"
 
 @class ZKCDHeader;
 
